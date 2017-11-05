@@ -647,6 +647,26 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion Corki
+			
+            #region Camille
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Camille",
+                Dangerlevel = 3,
+                MissileName = "CamilleEMissile",
+                Name = "CamilleE",
+				ProjectileSpeed = 1400,
+                Radius = 150,
+                Range = 1200,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "CamilleE",
+			    ExtraSpellNames = new[] {"CamilleEDash2", "camilleerightmissile"},
+                SpellType = SpellType.Line
+            });
+
+            #endregion Camille		
 
             #region Darius
 
@@ -847,14 +867,31 @@ namespace EzEvade_Port.Spells
             Spells.Add(new SpellData
             {
                 CharName = "Evelynn",
-                Dangerlevel = 4,
-                Name = "Agony's Embrace",
-                Radius = 350,
-                Range = 650,
+                Dangerlevel = 3,
+                MissileName = "EvelynnQDebuffCircleMissile",
+                Name = "EvelynnQ",
+				ProjectileSpeed = 2400,
+                Radius = 60,
+                Range = 950,
                 SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "EvelynnQ",
+                SpellType = SpellType.Line
+            });
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Evelynn",
+                Dangerlevel = 4,
+                MissileName = "EvelynnRTrail",
+                Name = "EvelynnR",
+			    ProjectileSpeed = 4194,
+                Radius = 450,
+                Range = 600,
+                SpellDelay = 0,
                 SpellKey = SpellSlot.R,
                 SpellName = "EvelynnR",
-                SpellType = SpellType.Circular
+                SpellType = SpellType.Line
             });
 
             #endregion Evelynn
@@ -1033,7 +1070,7 @@ namespace EzEvade_Port.Spells
                 SpellDelay = 500,
                 SpellKey = SpellSlot.Q,
                 SpellName = "gnarbigq",
-                SpellType = SpellType.Line,
+                SpellType = SpellType.Line
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions }
             });
 
@@ -1061,7 +1098,7 @@ namespace EzEvade_Port.Spells
                 SpellDelay = 600,
                 SpellKey = SpellSlot.W,
                 SpellName = "gnarbigw",
-                SpellType = SpellType.Line
+                SpellType = SpellType.Line,
             });
 
             Spells.Add(new SpellData
@@ -1263,6 +1300,25 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion Graves
+			
+            #region Gangplank
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Gangplank",
+                Dangerlevel = 3,
+                MissileName = "GangplankE",
+                Name = "GangplankE",
+				ProjectileSpeed = 500,
+                Radius = 300,
+                Range = 1000,
+                SpellDelay = 251,
+                SpellKey = SpellSlot.E,
+                SpellName = "GangplankE",
+                SpellType = SpellType.Circular
+            });
+
+            #endregion Gangplank			
 
             #region Hecarim
 
@@ -1546,7 +1602,7 @@ namespace EzEvade_Port.Spells
                 Name = "Shock Blast",
                 ProjectileSpeed = 1450,
                 Radius = 70,
-                Range = 1170,
+                Range = 1300,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 HasEndExplosion = true,
@@ -1570,7 +1626,7 @@ namespace EzEvade_Port.Spells
                 SpellName = "jayceshockblastwallmis",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-                SecondaryRadius = 210,
+                SecondaryRadius = 250,
                 FixedRange = true
             });
 
@@ -1971,6 +2027,40 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion KogMaw
+			
+            #region Kayn
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Kayn",
+                Dangerlevel = 3,
+                MissileName = "kaynw",
+                Name = "KaynW",
+				ProjectileSpeed = 500,
+                Radius = 75,
+                Range = 770,
+                SpellDelay = 550,
+                SpellKey = SpellSlot.W,
+                SpellName = "kaynw",
+                SpellType = SpellType.Line
+            });
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Kayn",
+                Dangerlevel = 2,
+                MissileName = "KaynQ",
+                Name = "KaynQ",
+			    ProjectileSpeed = 500,
+                Radius = 300,
+                Range = 400,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "KaynQ",
+                SpellType = SpellType.Circular
+            });
+
+            #endregion Kayn		
 
             #region Leblanc
 
@@ -2635,6 +2725,55 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion Orianna
+			
+            #region Ornn
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Ornn",
+                Dangerlevel = 2,
+                MissileName = "OrnnQ",
+                Name = "OrnnQ",
+				ProjectileSpeed = 1764,
+                Radius = 65,
+                Range = 850,
+                SpellDelay = 151,
+                SpellKey = SpellSlot.Q,
+                SpellName = "OrnnQ",
+                SpellType = SpellType.Line
+            });
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Ornn",
+                Dangerlevel = 2,
+                MissileName = "OrnnE",
+                Name = "OrnnE",
+			    ProjectileSpeed = 1600,
+                Radius = 65,
+                Range = 800,
+                SpellDelay = 151,
+                SpellKey = SpellSlot.E,
+                SpellName = "OrnnE",
+                SpellType = SpellType.Line
+            });
+			
+            Spells.Add(new SpellData
+            {
+                CharName = "Ornn",
+                Dangerlevel = 3,
+                MissileName = "OrnnRWave",
+                Name = "OrnnR",
+			    ProjectileSpeed = 450,
+                Radius = 250,
+                Range = 3500,
+                SpellDelay = 251,
+                SpellKey = SpellSlot.R,
+                SpellName = "OrnnR",
+                SpellType = SpellType.Line
+            });			
+
+            #endregion Ornn			
 
             #region Pantheon
 
@@ -2891,6 +3030,40 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion Ryze
+			
+            #region Rakan
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Rakan",
+                Dangerlevel = 2,
+                MissileName = "RakanQReturnMis",
+                Name = "RakanQ",
+				ProjectileSpeed = 1850,
+                Radius = 70,
+                Range = 900,
+                SpellDelay = 500,
+                SpellKey = SpellSlot.Q,
+                SpellName = "RakanQ",
+                SpellType = SpellType.Line
+            });
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Rakan",
+                Dangerlevel = 2,
+                MissileName = "RakanWCast",
+                Name = "KaynW",
+			    ProjectileSpeed = 2050,
+                Radius = 180,
+                Range = 600,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.W,
+                SpellName = "RakanW",
+                SpellType = SpellType.Circular
+            });
+
+            #endregion Rakan	
 
             #region Sejuani
 
@@ -3853,6 +4026,41 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion Xerath
+			
+            #region Xayah
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Xayah",
+                Dangerlevel = 2,
+                MissileName = "XayahQMissile",
+                Name = "XayahQ",
+				ProjectileSpeed = 1400,
+                Radius = 50,
+                Range = 1150,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "XayahQ",
+				ExtraSpellNames = new[] {"XayahQMissile2"},
+                SpellType = SpellType.Line
+            });
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Xayah",
+                Dangerlevel = 4,
+                MissileName = "XayahR",
+                Name = "XayahR",
+			    ProjectileSpeed = 1850,
+                Radius = 200,
+                Range = 1100,
+                SpellDelay = 1000,
+                SpellKey = SpellSlot.R,
+                SpellName = "XayahR",
+                SpellType = SpellType.Line
+            });
+
+            #endregion Xayah			
 
             #region Yasuo
 
@@ -4085,6 +4293,25 @@ namespace EzEvade_Port.Spells
             });
 
             #endregion Zilean
+			
+            #region Warwick
+
+            Spells.Add(new SpellData
+            {
+                CharName = "Warwick",
+                Dangerlevel = 4,
+                MissileName = "WarwickRMissile",
+                Name = "WarwickR",
+				ProjectileSpeed = 2175,
+                Radius = 90,
+                Range = 700,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "WarwickR",
+                SpellType = SpellType.Line
+            });
+
+            #endregion Warwick			
 
             #region Zyra
 
