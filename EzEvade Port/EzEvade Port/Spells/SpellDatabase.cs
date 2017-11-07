@@ -3413,22 +3413,7 @@ namespace EzEvade_Port.Spells
             #endregion TahmKench
 
             #region Talon
-
-            Spells.Add(new SpellData
-            {
-                CharName = "Talon",
-                Dangerlevel = 4,
-                Name = "Shadow Assault [Beta]",
-                ProjectileSpeed = 2400,
-                Radius = 140,
-                Range = 550,
-                SpellKey = SpellSlot.R,
-                SpellName = "talonrmisone",
-                ExtraMissileNames = new[] { "talonrmistwo" },
-                SpellType = SpellType.Line,
-                FixedRange = true
-            });
-
+		    
             Spells.Add(new SpellData
             {
                 Angle = 14,
@@ -3669,7 +3654,6 @@ namespace EzEvade_Port.Spells
                 SpellKey = SpellSlot.Q,
                 SpellName = "UrgotQMissile",
                 SpellType = SpellType.Line,
-                //CollisionObjects = new[] {CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions},
                 FixedRange = true
             });
 
