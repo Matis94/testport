@@ -919,7 +919,7 @@ namespace EzEvade_Port.Spells
             Spells.Add(new SpellData
             {
                 CharName = "Ezreal",
-                Dangerlevel = 2,
+                Dangerlevel = 3,
                 MissileName = "EzrealTrueshotBarrage",
                 Name = "Trueshot Barrage",
                 ProjectileSpeed = 2000,
@@ -1290,7 +1290,7 @@ namespace EzEvade_Port.Spells
                 Name = "Collateral Damage (Explosion)",
                 ProjectileSpeed = 2115,
                 Radius = 150,
-                Range = 110,
+                Range = 1100,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.R,
                 SpellName = "GravesChargeShotFxMissile",
@@ -4000,7 +4000,7 @@ namespace EzEvade_Port.Spells
                 MissileName = "XerathLocusPulse",
                 Radius = 200,
                 Range = 5600,
-                SpellDelay = 600,
+                SpellDelay = 700,
                 SpellKey = SpellSlot.R,
                 SpellName = "xerathrmissilewrapper",
                 ExtraSpellNames = new[] { "XerathLocusPulse" },
@@ -4059,8 +4059,10 @@ namespace EzEvade_Port.Spells
                 SpellType = SpellType.Line,
             });
 
-            #endregion Xayah			
-
+            #endregion Xayah
+		    
+          //TODO: Add Xin Zhao W
+		    
             #region Yasuo
 
             Spells.Add(new SpellData
